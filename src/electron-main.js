@@ -735,6 +735,7 @@ app.on('ready', async () => {
         }
     }
 
+    /*
     protocol.registerFileProtocol('vector', (request, callback) => {
         if (request.method !== 'GET') {
             callback({error: -322}); // METHOD_NOT_SUPPORTED from chromium/src/net/base/net_error_list.h
@@ -786,6 +787,7 @@ app.on('ready', async () => {
             path: absTarget,
         });
     });
+    */
 
     if (argv['no-update']) {
         console.log('Auto update disabled via command line flag "--no-update"');
@@ -829,7 +831,7 @@ app.on('ready', async () => {
             spellcheck: true,
         },
     });
-    mainWindow.loadURL('vector://vector/webapp/');
+    mainWindow.loadURL('http://localhost:8080');
     Menu.setApplicationMenu(vectorMenu);
 
     // Create trayIcon icon
