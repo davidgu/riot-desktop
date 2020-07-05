@@ -1,3 +1,5 @@
+Create folder webapp.asar in the project root & copy the config.json file from the web server into that folder.
+
 Riot Desktop
 ============
 
